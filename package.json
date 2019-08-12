@@ -2,8 +2,8 @@
   "name": "tensorflow-yolov3",
   "version": "1.0.0",
   "description": "",
-  "engines" : {
-      "node" : ">=8.15"
+  "engines": {
+    "node": ">=8.15"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,13 +13,17 @@
   "author": "ajames72",
   "license": "ISC",
   "dependencies": {
+    "@tensorflow/tfjs": "1.2.7",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-router-dom": "5.0.1"
+    "react-router-dom": "5.0.1",
+    "regenerator-runtime": "0.13.3",
+    "tfjs-tiny-yolov3": "1.0.3"
   },
   "devDependencies": {
     "@babel/cli": "7.5.5",
     "@babel/core": "7.5.5",
+    "@babel/plugin-transform-async-to-generator": "7.5.0",
     "@babel/preset-env": "7.5.5",
     "@babel/preset-react": "7.0.0",
     "babel-loader": "8.0.6",

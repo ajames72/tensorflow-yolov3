@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TinyYoloV3 from 'tfjs-tiny-yolov3';
 import { setupWebcam } from '../../services/webcam';
+import 'regenerator-runtime';
 import './tinyYoloV3.scss';
 
 class TinyYoloV3View extends Component {
@@ -52,8 +53,6 @@ class TinyYoloV3View extends Component {
         const { person } = this.state;
         return (
             <div>
-                <h1>Tiny-YOLOv3 using TensorFlow.js</h1>
-                <div>https://www.npmjs.com/package/tfjs-tiny-yolov3</div>
                 <video autoPlay playsInline muted className="webcam" id="webcam" width="224" height="224"></video>
                 {
                     person ? (
